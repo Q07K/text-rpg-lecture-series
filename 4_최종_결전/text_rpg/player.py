@@ -76,7 +76,7 @@ class Player:
     def attack(self, monster):
         monster.hp -= self.atk
 
-    def __rshift__(self, monster):
+    def __sub__(self, monster):
         self.attack(monster)
 
     def is_dead(self):

@@ -27,7 +27,7 @@ class Monster:
     def attack(self, player):
         player.hp -= self.atk
 
-    def __rshift__(self, player):
+    def __sub__(self, player):
         self.attack(player)
 
     def is_dead(self):

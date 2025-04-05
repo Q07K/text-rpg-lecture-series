@@ -25,14 +25,14 @@ class Battle:
         sleep(1)
 
     def take_turn(self):
-        self.player >> self.enemy
+        self.player - self.enemy
         self.display_battle()
         if self.enemy.is_dead():
             self.player.exp += self.enemy.exp
             self.player.level_up()
             return False
 
-        self.enemy >> self.player
+        self.enemy - self.player
         self.display_battle()
         if self.player.is_dead():
             return False
