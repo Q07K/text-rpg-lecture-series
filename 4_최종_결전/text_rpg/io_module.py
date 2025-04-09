@@ -19,6 +19,7 @@ def hp_bar(unit1, unit2):
     filled_length1 = int((unit1_hp / unit1.max_hp) * bar_length)
     filled_length2 = int((unit2_hp / unit2.max_hp) * bar_length)
 
+    # ⣿ U+28FF
     health_bar1 = "⣿" * filled_length1 + " " * (bar_length - filled_length1)
     health_bar2 = "⣿" * filled_length2 + " " * (bar_length - filled_length2)
 
